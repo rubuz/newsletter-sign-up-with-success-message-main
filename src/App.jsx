@@ -1,6 +1,7 @@
 import "./App.css";
 import List from "./components/List/List";
 import Input from "./components/Input/Input";
+import Btn from "./components/Btn/Btn";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           </p>
           <List />
           <Input />
+          <Btn />
         </div>
         <div className="right__container"></div>
       </main>
