@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-800);
+}
+
+.main {
+  background-color: var(--clr-neutral-100);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.left__container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-inline: 2.5rem;
+  width: 30rem;
+  justify-content: center;
+}
+
+.title {
+  font-size: var(--fs-big);
+}

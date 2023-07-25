@@ -3,6 +3,7 @@
 :root {
   --ff-regular: "Roboto", sans-serif;
   --fs-regular: 1rem;
+  --fs-big: 3.5rem;
 
   --clr-primary: hsl(4, 100%, 67%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -33,9 +34,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  height: 100vh;
-  display: grid;
-  place-content: center;
   font-family: var(--ff-regular);
 }
 /*

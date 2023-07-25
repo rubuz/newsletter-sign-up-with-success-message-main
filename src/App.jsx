@@ -2,6 +2,7 @@ import "./App.css";
 import List from "./components/List/List";
 import Input from "./components/Input/Input";
 import Btn from "./components/Btn/Btn";
+import image from "./assets/illustration-sign-up-desktop.svg";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <Input />
           <Btn />
         </div>
-        <div className="right__container"></div>
+        <div className="right__container">
+          <img src={image} alt="" srcset="" />
+        </div>
       </main>
     </>
   );
