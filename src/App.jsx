@@ -3,6 +3,7 @@ import List from "./components/List/List";
 import Input from "./components/Input/Input";
 import Btn from "./components/Btn/Btn";
 import image from "./assets/illustration-sign-up-desktop.svg";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
           </p>
           <List />
           <Input />
-          <Btn />
+          <Btn text="Subscribe to monthly newsletter" />
         </div>
         <div className="right__container">
           <img src={image} alt="" srcset="" />
         </div>
       </main>
+      <Modal />
     </>
   );
 }

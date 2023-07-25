@@ -9,10 +9,10 @@ const Modal = () => {
       <img src={check} alt="" srcset="" />
       <h2 className="modal__title">Thanks for subscribing!</h2>
       <p className="modal__text">
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to <span>ash@loremcompany</span>.com.
+        Please open it and click the button inside to confirm your subscription.
       </p>
-      <Btn />
+      <Btn text="Dismiss message" />
     </div>
   );
 };
