@@ -1,0 +1,29 @@
+.input__container {
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.input__text-container {
+  font-size: var(--fs-small);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__warning {
+  color: var(--clr-primary);
+}
+
+#input {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-neutral-200);
+}
+
+#input:focus {
+  outline: none;
+  border: 1px solid var(--clr-neutral-800);
+  color: var(--clr-neutral-800);
+}
