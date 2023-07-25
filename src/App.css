@@ -26,3 +26,29 @@ body {
 .title {
   font-size: var(--fs-big);
 }
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding-block: 0.8rem;
+  /* background-color: var(--clr-neutral-600); */
+  background: linear-gradient(
+    90deg,
+    var(--clr-neutral-600) 70%,
+    #ff527b,
+    #ff6a3a
+  );
+  background-size: 300% 100%;
+  background-position: 0 0;
+  color: var(--clr-neutral-100);
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.4s ease-out;
+}
+
+.btn:hover {
+  background-size: 650%;
+  background-position: 100% 0;
+  box-shadow: 0 5px 20px #ff527b;
+}

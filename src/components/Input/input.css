@@ -1,6 +1,5 @@
 .input__container {
   width: 100%;
-  margin-bottom: 0.4rem;
 }
 
 .input__text-container {
@@ -15,15 +14,27 @@
   color: var(--clr-primary);
 }
 
-#input {
+.input {
   width: 100%;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--clr-neutral-200);
+  margin-bottom: 1.3rem;
 }
 
-#input:focus {
+.input:focus {
   outline: none;
   border: 1px solid var(--clr-neutral-800);
   color: var(--clr-neutral-800);
+}
+
+.not-valid {
+  background-color: hsl(4, 100%, 95%);
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.not-valid:focus {
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
 }
