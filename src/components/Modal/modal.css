@@ -45,4 +45,8 @@
   .modal img {
     width: 60px;
   }
+
+  .modal p {
+    font-size: 1rem;
+  }
 }

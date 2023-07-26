@@ -6,7 +6,7 @@ const Modal = ({ email, onDismiss }) => {
   return (
     <div className="modal">
       <div className="modal__container">
-        <img src={check} alt="" />
+        <img src={check} alt="icon of a checkmark" />
         <h2 className="modal__title">Thanks for subscribing!</h2>
         <p className="modal__text">
           A confirmation email has been sent to <span>{email}</span>.com. Please

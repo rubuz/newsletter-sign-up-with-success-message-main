@@ -43,9 +43,15 @@ function App() {
           </div>
           <div className="right__container">
             {windowWidth < 821 ? (
-              <img src={imageMobile} alt="" />
+              <img
+                src={imageMobile}
+                alt="flat disegned graphics of screen, and some dashboards"
+              />
             ) : (
-              <img src={image} alt="" />
+              <img
+                src={image}
+                alt="flat disegned graphics of screen, and some dashboards"
+              />
             )}
           </div>
         </main>
