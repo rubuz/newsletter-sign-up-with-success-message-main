@@ -2,12 +2,23 @@ import "./App.css";
 import List from "./components/List/List";
 import Input from "./components/Input/Input";
 import image from "./assets/illustration-sign-up-desktop.svg";
+import imageMobile from "./assets/illustration-sign-up-mobile.svg";
 import Modal from "./components/Modal/Modal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [subscribedEmail, setSubscribedEmail] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   const handleSubscribe = (email) => {
     setSubscribedEmail(email);
@@ -31,7 +42,11 @@ function App() {
             <Input onSubscribe={handleSubscribe} />
           </div>
           <div className="right__container">
-            <img src={image} alt="" />
+            {windowWidth < 821 ? (
+              <img src={imageMobile} alt="" />
+            ) : (
+              <img src={image} alt="" />
+            )}
           </div>
         </main>
       ) : (
