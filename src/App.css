@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 .left__container {
@@ -20,7 +21,7 @@ body {
   gap: 1rem;
   flex-direction: column;
   padding-inline: 2.5rem;
-  width: 55%;
+  width: 57%;
   justify-content: center;
 }
 
